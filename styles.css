@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 30px;
+  font-family: sans-serif;
+  color: white;
+  background-color: #24292e;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-flow: column;
+}
+
+.searchForm {
+  padding: 15px;
+  font-size: 1.5rem;
+  background-color: #525e6a;
+  border-radius: 15px 15px 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+input {
+  width: 300px;
+  margin-top: 10px;
+  padding: 7px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+
+.userList {
+  padding: 10px;
+
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.user {
+  width: 150px;
+  margin: 10px;
+  border: 2px solid #525e6a;
+  border-radius: 7px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: .2s;
+}
+
+.user img {
+  width: 150px;
+  height: 150px;
+}
+
+.user p {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.user:hover {
+  box-shadow: 0px 0px 25px 5px rgba(51, 59, 66, 0.5);
+  transform: scale(1.05);
+}
+
+.user:hover p {
+  background-color: #525e6a;
+}
